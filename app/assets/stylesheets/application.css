@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: coral;
+}
+
+ table.welcome-table2{
+   width: 100%;
+   border-radius: 8px;
+   margin-left: 20px;
+   margin-right: auto;
+   margin-top: 20px;
+   text-align: center;
+   position: fixed;
+   font-size: 60px;
+ }
+
+ h3 span::before{
+   content: '';
+   color: #3995aa;
+   animation: profile 10s infinite;
+ }
+ @keyframes profile {
+   0% { content: 'a bodybuilder'}
+   20% { content: 'a Colorado native'}
+   40% { content: 'a husband'}
+   60% { content: 'I was born with Deaf parents'}
+   80% { content: 'I love the outdoors'}
+   100% { content: 'I love the outdoors'}
+ }
+
+ @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
+
+.marquee {
+ font-size: 0;
+}
+
+.clipped-text {
+ display: inline-block;
+ font-size: 50px;
+ font-weight: bold;
+ width: 100%;
+ text-align: center;
+}
+
+.robotics {
+ background-image: url(https://media.giphy.com/media/ZEO103yW71cX3Pf8Ql/source.gif);
+ color: transparent;
+ -moz-background-clip: text;
+ -webkit-background-clip: text;
+}
