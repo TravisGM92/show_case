@@ -13,3 +13,81 @@
  *= require_tree .
  *= require_self
  */
+
+ table.welcome-table2{
+   width: 100%;
+   border-radius: 8px;
+   margin-left: 20px;
+   margin-right: auto;
+   margin-top: 20px;
+   text-align: center;
+   font-size: 60px;
+ }
+
+ h3 span::before{
+   content: '';
+   color: #3995aa;
+   animation: profile 10s infinite;
+ }
+ @keyframes profile {
+   0% { content: 'I am a bodybuilder'}
+   20% { content: "I'm a Colorado native"}
+   40% { content: "I'm a husband"}
+   60% { content: 'I was born with Deaf parents'}
+   80% { content: 'I love the outdoors'}
+   100% { content: 'I am a fur father'}
+ }
+
+ @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
+
+.marquee {
+ font-size: 0;
+}
+
+.clipped-text {
+ display: inline-block;
+ font-size: 50px;
+ font-weight: bold;
+ width: 100%;
+ text-align: center;
+}
+
+.robotics {
+ background-image: url(https://media.giphy.com/media/ZEO103yW71cX3Pf8Ql/source.gif);
+ color: black;
+ -moz-background-clip: text;
+ -webkit-background-clip: text;
+}
+
+table.education-table {
+  table-layout: auto;
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 0 10px #a9a9a9;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 50px;
+  float: left;
+  margin-right: 60px;
+}
+
+table.work-table {
+  table-layout: auto;
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 0 10px #a9a9a9;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 0px;
+  float: left;
+  margin-right: 60px;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.row {
+  margin: 15px;
+}
