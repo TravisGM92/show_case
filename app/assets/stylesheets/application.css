@@ -93,22 +93,31 @@ table.work-table {
 
 table.about-table {
   table-layout: auto;
-  width: 60%;
+  width: 70%;
   background-color: white;
   box-shadow: 0 0 10px #a9a9a9;
   border-radius: 5px;
-  margin: 20px;
   margin-top: 25px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   float: right;
 }
 
-#kiah_travis{
-  height: 300px;
-  width: 300px;
+#kiah_travis-about{
+  height: 200px;
+  width: 200px;
+  position: fixed;
+}
+
+#group_photo{
+  margin-top: 210px;
+  height: 200px;
+  width: 200px;
+  position: fixed;
 }
 
 #funny_sign{
-  height: 280px;
+  height: auto;
   position: relative;
   display: block;
   margin-left: auto;
@@ -117,7 +126,7 @@ table.about-table {
 }
 
 #turing-image{
-  height: 310px;
+  height: auto;
   position: relative;
   display: block;
   margin-left: auto;
@@ -133,7 +142,6 @@ table.about-table {
   margin-top: 10px;
   margin-left: 40px;
   float: left;
-
 }
 
 .row {
