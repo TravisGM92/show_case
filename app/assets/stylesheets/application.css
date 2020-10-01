@@ -60,6 +60,13 @@
  -webkit-background-clip: text;
 }
 
+.robotics1 {
+ background-image: url(https://media.giphy.com/media/ZEO103yW71cX3Pf8Ql/source.gif);
+ color: transparent;
+ -moz-background-clip: text;
+ -webkit-background-clip: text;
+}
+
 table.education-table {
   table-layout: auto;
   width: 40%;
