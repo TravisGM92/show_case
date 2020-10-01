@@ -47,7 +47,7 @@
 
 .clipped-text {
  display: inline-block;
- font-size: 50px;
+ font-size: 90px;
  font-weight: bold;
  width: 100%;
  text-align: center;
@@ -56,6 +56,13 @@
 .robotics {
  background-image: url(https://media.giphy.com/media/ZEO103yW71cX3Pf8Ql/source.gif);
  color: black;
+ -moz-background-clip: text;
+ -webkit-background-clip: text;
+}
+
+.robotics1 {
+ background-image: url(https://media.giphy.com/media/ZEO103yW71cX3Pf8Ql/source.gif);
+ color: transparent;
  -moz-background-clip: text;
  -webkit-background-clip: text;
 }
@@ -84,8 +91,49 @@ table.work-table {
   margin-right: 60px;
 }
 
+table.about-table {
+  table-layout: auto;
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 0 10px #a9a9a9;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 25px;
+  float: right;
+}
+
+#kiah_travis{
+  height: 300px;
+  width: 300px;
+}
+
+#funny_sign{
+  height: 280px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#turing-image{
+  height: 310px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .container{
   margin-top: 50px;
+}
+
+.about-container{
+  margin-top: 10px;
+  margin-left: 40px;
+  float: left;
+
 }
 
 .row {
