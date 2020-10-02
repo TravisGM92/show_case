@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
   def about_me
 
   end
+
+  def skills
+  end
 end

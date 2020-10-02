@@ -5,5 +5,6 @@ RSpec.describe 'About Me page' do
 
       visit "/about_me"
       expect(page).to have_content("About Me")
+      expect(page).to have_link("click here!")
   end
 end
