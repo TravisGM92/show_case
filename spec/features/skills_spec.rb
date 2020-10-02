@@ -14,7 +14,8 @@ RSpec.describe 'Skills' do
       visit "/about_me"
       click_link("click here!")
       expect(current_path).to eq("/skills")
-      expect(page).to have_content("")
+      expect(page).to have_content("SQL")
+      expect(page).to have_content("MVC")
     end
   end
 end
