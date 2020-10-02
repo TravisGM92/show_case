@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   #skills
   get '/skills', to: "welcome#skills"
+  get '/skills/mvc', to: "welcome#skills_mvc"
 
 end
