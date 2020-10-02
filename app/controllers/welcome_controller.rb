@@ -10,4 +10,7 @@ class WelcomeController < ApplicationController
 
   def skills
   end
+
+  def skills_mvc
+  end
 end
