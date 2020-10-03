@@ -9,6 +9,5 @@ Rails.application.routes.draw do
   #skills
   get '/skills', to: "welcome#skills"
   get '/skills/mvc', to: "welcome#skills_mvc"
-  get '/skills/crud', to: "welcome#skills_crud"
 
 end
