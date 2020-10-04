@@ -1,5 +1,5 @@
 class Team < ApplicationRecord
-  # has_many :item_orders, through: :items
+  has_many :players
 
 validates_presence_of :team_name,
                       :state,
