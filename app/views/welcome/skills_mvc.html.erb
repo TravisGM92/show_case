@@ -31,6 +31,26 @@
     </tr>
   </table>
 
+  <div class="team-form">
+    <center>
+      <%= form_tag "/skills/mvc/teams", method: :post do %>
+        <%= label_tag :team_name %>
+        <%= text_field_tag :team_name%>
+
+        <%= label_tag :state %>
+        <%= text_field_tag :state %>
+
+        <%= label_tag :year_of_inception %>
+        <%= number_field_tag :year_of_inception %>
+
+        <%= submit_tag 'Create team' %>
+      <% end %>
+    </center>
+  </div>
+<br>
+<br>
+<br>
+<br>
 
 
 
