@@ -8,7 +8,7 @@ RSpec.describe 'CRUD page' do
       fill_in :team_name, with: "The Purple Stuff"
       fill_in :state, with: "Colorado"
       fill_in :year_of_inception, with: 1980
-      click("Create team")
+      click_on("Create team")
 
       expect(current_path).to eq("/skills/mvc")
       expect(page).to have_content("The Purple Stuff")
