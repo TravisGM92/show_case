@@ -9,7 +9,7 @@ describe Player, type: :model do
     it { should validate_presence_of :home_state }
   end
 
-  # describe "relationships" do
-  #   it {should have_many :players}
-  # end
+  describe "relationships" do
+    it {should belong_to :team}
+  end
 end

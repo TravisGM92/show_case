@@ -47,6 +47,15 @@
       <% end %>
     </center>
   </div>
+  <br>
+  <% @teams.each do |team| %>
+    <section id='team-<%= team.id %>'>
+      <h2><%= team.team_name %></h2>
+      <p>Located in: <%= team.state %></p>
+      <p>Started in: <%= team.year_of_inception %></p>
+    </section>
+  <% end %>
+
 <br>
 <br>
 <br>
