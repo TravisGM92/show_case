@@ -28,7 +28,7 @@ RSpec.describe 'Skills' do
       visit "/skills"
       expect(page).to have_link("CRUD Functionality")
       click_link("CRUD Functionality")
-      expect(current_path).to eq("/skills/crud")
+      expect(current_path).to eq("/skills/mvc")
       expect(page).to have_content("")
     end
   end
