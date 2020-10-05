@@ -34,33 +34,51 @@
   <div class="team-form">
     <center>
       <%= form_tag "/skills/mvc/teams", method: :post do %>
-        <%= label_tag :team_name %>
-        <%= text_field_tag :team_name%>
+      <%= label_tag :team_name %>
+      <%= text_field_tag :team_name%>
 
-        <%= label_tag :state %>
-        <%= text_field_tag :state %>
+      <%= label_tag :state %>
+      <%= text_field_tag :state %>
 
-        <%= label_tag :year_of_inception %>
-        <%= number_field_tag :year_of_inception %>
+      <%= label_tag :year_of_inception %>
+      <%= number_field_tag :year_of_inception %>
 
-        <%= submit_tag 'Create team' %>
+      <%= submit_tag 'Create team' %>
       <% end %>
     </center>
   </div>
   <br>
+
   <% @teams.each do |team| %>
-    <section id='team-<%= team.id %>'>
-      <h2><%= team.team_name %></h2>
-      <p>Located in: <%= team.state %></p>
-      <p>Started in: <%= team.year_of_inception %></p>
-    </section>
-  <% end %>
+  <section id='team-<%= team.id %>'>
+    <div class="card-my2">
+      <div class="active-div">
+        <div class="owl">
+          <img class="img2" src="https://cdn0.iconfinder.com/data/icons/buildings-29/224/home-circle-icon-house-128.png">
+        </div>
+        <h2><%=team.team_name %></h2>
+        <p> State: <%= team.state%><br>Active players: 0</p>
+        <p> Year started: <%= team.year_of_inception%></p>
+      </div>
+      <br>
+      <br>
+      <div class="hover-div">
+        <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
+        <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">Update</a>
+        <br><br><br>
+        <form action="/teams<%= team.id %>" method="POST" style="font-size:25px;">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete"/>
+        </form>
+      </section>
+      <%end %>
 
-<br>
-<br>
-<br>
-<br>
+      <br>
+      <br>
+      <br>
+      <br>
 
 
 
-</body>
+    </body>
