@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get '/skills', to: "welcome#skills"
   get '/skills/mvc', to: "welcome#skills_mvc"
 
+  #teams
+  post '/skills/mvc/teams', to: "teams#create"
+
 end

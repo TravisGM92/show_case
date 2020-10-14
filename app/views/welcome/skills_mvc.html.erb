@@ -13,3 +13,97 @@
     }
   </style>
 </head>
+<body>
+  <div class="foo">
+    <span class="letter" data-letter="C">C</span>
+    <span class="letter" data-letter="R">R</span>
+    <span class="letter" data-letter="U">U</span>
+    <span class="letter" data-letter="D">D</span>
+  </div>
+
+  <table class="lessons-table2">
+    <tr>
+      <th>
+        <h3 style="margin-left:10px;margin-top:10px;">What is CRUD?</h3>
+        <br>
+        <p style="margin-left:10px;margin-right:10px;">CRUD stands for 'create, read, update/edit, delete/destroy', it is an acronymn to describe the basic functions with SQL (database querying). Most of the time, if one is dealing with a SQL database, they'll be doing one of those 4 things; creating something, reading or looking at some part of the table, updating an existing record, deleting an existing record.<br><br>I've created this page to illustrate my fluency with C R U D functionality. Below you'll find both a form for creating a new baseball team.</p>
+      </th>
+    </tr>
+  </table>
+
+  <div class="team-form">
+    <center>
+      <%= form_tag "/skills/mvc/teams", method: :post do %>
+      <%= label_tag :team_name %>
+      <%= text_field_tag :team_name%>
+
+      <%= label_tag :state %>
+      <%= text_field_tag :state %>
+
+      <%= label_tag :year_of_inception %>
+      <%= number_field_tag :year_of_inception %>
+
+      <%= submit_tag 'Create team' %>
+      <% end %>
+    </center>
+  </div>
+  <br>
+  <%x = 1 %>
+  <% if x.odd? %>
+  <% @teams.each do |team| %>
+  <section id='team-<%= team.id %>'>
+    <div class="card-my2" style="float:left;">
+      <div class="active-div">
+        <div class="owl">
+          <img class="img2" src="https://i.ibb.co/yP6Cz7m/Daco-14930.png" alt="baseball">
+        </div>
+        <h2><%=team.team_name %></h2>
+        <p> State: <%= team.state%><br>Active players: 0</p>
+        <p> Year started: <%= team.year_of_inception%></p>
+      </div>
+      <br>
+      <br>
+      <div class="hover-div">
+        <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
+        <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">Edit team info</a>
+        <br><br><br>
+        <form action="/teams<%= team.id %>" method="POST" style="font-size:25px;">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="delete"/>
+        </form>
+      </section>
+      <%end %>
+      <%else %>
+        <section id='team-<%= team.id %>'>
+          <div class="card-my2" style="float:right;">
+            <div class="active-div">
+              <div class="owl">
+                <img class="img2" src="https://i.ibb.co/yP6Cz7m/Daco-14930.png" alt="baseball">
+              </div>
+              <h2><%=team.team_name %></h2>
+              <p> State: <%= team.state%><br>Active players: 0</p>
+              <p> Year started: <%= team.year_of_inception%></p>
+            </div>
+            <br>
+            <br>
+            <div class="hover-div">
+              <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
+              <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">Edit team info</a>
+              <br><br><br>
+              <form action="/teams<%= team.id %>" method="POST" style="font-size:25px;">
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="submit" value="delete"/>
+              </form>
+            </section>
+        <%end %>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+    </body>

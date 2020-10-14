@@ -12,5 +12,9 @@ class WelcomeController < ApplicationController
   end
 
   def skills_mvc
+    @teams = Team.all
+  end
+
+  def skills_crud
   end
 end

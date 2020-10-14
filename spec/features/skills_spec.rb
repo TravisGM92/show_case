@@ -21,10 +21,6 @@ RSpec.describe 'Skills' do
   describe "When I go to '/skills' and click on 'MVC'" do
     it "I'm redirected to a page that shows the MVC I've been learning" do
       visit "/skills"
-      expect(page).to have_link("MVC Design Patterns")
-      click_link("MVC Design Patterns")
-      expect(current_path).to eq("/skills/mvc")
-      expect(page).to have_content("")
     end
   end
   describe "When I go to '/skills' and click on 'CRUD Functionality'" do
@@ -32,7 +28,7 @@ RSpec.describe 'Skills' do
       visit "/skills"
       expect(page).to have_link("CRUD Functionality")
       click_link("CRUD Functionality")
-      expect(current_path).to eq("/skills/crud")
+      expect(current_path).to eq("/skills/mvc")
       expect(page).to have_content("")
     end
   end
