@@ -51,7 +51,7 @@
   <%x = 1 %>
   <% if x.odd? %>
   <% @teams.each do |team| %>
-  <section id='team-<%= team.id %>'>
+  <div id='team-<%= team.id %>'>
     <div class="card-my2" style="float:left;">
       <div class="active-div">
         <div class="owl">
@@ -64,18 +64,18 @@
       <br>
       <br>
       <div class="hover-div">
-        <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
-        <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">Edit team info</a>
+        <a href="/skills/mvc/teams/<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
+        <a href="/skills/mvc/teams/<%= team.id %>/edit" value="Edit-team-info" id="Edit-team-info" style="font-weight:bold;font-size:25px;">Edit team info</a>
         <br><br><br>
         <form action="/teams<%= team.id %>" method="POST" style="font-size:25px;">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
           <input type="hidden" name="_method" value="DELETE">
           <input type="submit" value="delete"/>
         </form>
-      </section>
+      </div>
       <%end %>
       <%else %>
-        <section id='team-<%= team.id %>'>
+        <div id='team-<%= team.id %>'>
           <div class="card-my2" style="float:right;">
             <div class="active-div">
               <div class="owl">
@@ -88,15 +88,15 @@
             <br>
             <br>
             <div class="hover-div">
-              <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
-              <a href="/skills/mvc/teams<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">Edit team info</a>
+              <a href="/skills/mvc/teams/<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">View team stats, add players, and more</a><br><br>
+              <a href="/skills/mvc/teams/<%= team.id %>/edit" value="Update" id="Update" style="font-weight:bold;font-size:25px;">Edit team info</a>
               <br><br><br>
-              <form action="/teams<%= team.id %>" method="POST" style="font-size:25px;">
+              <form action="/teams/<%= team.id %>" method="POST" style="font-size:25px;">
                 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="submit" value="delete"/>
               </form>
-            </section>
+            </div>
         <%end %>
 
       <br>
