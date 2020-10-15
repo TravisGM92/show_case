@@ -9,6 +9,14 @@ class TeamsController < ApplicationController
     end
   end
 
+  def edit
+    @team = Team.find(params[:id])
+  end
+
+  def update
+    require "pry"; binding.pry
+  end
+
 
 
   private
@@ -16,5 +24,4 @@ class TeamsController < ApplicationController
   def team_params
     params.permit(:team_name,:state,:year_of_inception)
   end
-
 end

@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   #teams
   post '/skills/mvc/teams', to: "teams#create"
+  get '/skills/mvc/teams/:id/edit', to: "teams#edit"
+  patch '/skills/mvc/teams/:id/edit', to: "teams#update"
 
 end

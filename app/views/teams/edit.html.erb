@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv = "Content-Language" content = "en-us" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Home page</title>
+  <style>
+    body {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<div class="box bg-img">
+  <div class="edit-team">
+    <h2>Edit<span> <%= @team[:team_name] %></span></h2>
+
+    <div class="forms">
+
+      <div class="user-input" id="user-input">
+        <%= form_tag "/skills/mvc/teams/#{@team.id}/edit", method: :patch do %>
+        <%= text_field_tag :team_name, "#{@team[:team_name]}", :id => "team-name"%>
+      </div>
+      <br>
+      <div class="pass-input">
+        <%= text_field_tag :state, "#{@team[:state]}", :id => "team-state"%>
+        <br>
+        <br>
+        <%= number_field_tag :year_of_inception, "#{@team[:year_of_inception]}", :id => "year"%>
+      </div>
+      <br>
+    </div>
+
+    <%= submit_tag "Update team"%>
+    <%end %>
+    <br>
+
+  </div>
+</div>
+<br>
+<br>
+
+<div class="player-add-form" style="float: left;margin-left:100px;">
+  <center>
+    <%= form_tag "/skills/mvc/teams", method: :post do %>
+    <%= label_tag :name %>
+    <%= text_field_tag :name%>
+    <br>
+    <%= label_tag :height %>
+    <%= number_field_tag :height %>
+    <br>
+    <%= label_tag :weight %>
+    <%= number_field_tag :weight %>
+    <br>
+    <%= label_tag :college %>
+    <%= text_field_tag :college%>
+    <br>
+    <%= label_tag :home_state %>
+    <%= text_field_tag :home_state%>
+    <br>
+    <%= submit_tag 'Add Player' %>
+    <% end %>
+  </center>
+</div>
+<br>
+<br>
+<br>
