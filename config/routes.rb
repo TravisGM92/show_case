@@ -12,5 +12,4 @@ Rails.application.routes.draw do
 
   #teams
   post '/skills/mvc/teams', to: "teams#create"
-
 end
