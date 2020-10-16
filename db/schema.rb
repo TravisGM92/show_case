@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_04_153240) do
+ActiveRecord::Schema.define(version: 2020_10_15_225612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_10_04_153240) do
     t.string "college"
     t.string "home_state"
     t.bigint "team_id"
+    t.string "position"
     t.index ["team_id"], name: "index_players_on_team_id"
   end
 
