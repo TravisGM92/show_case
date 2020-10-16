@@ -17,5 +17,4 @@ Rails.application.routes.draw do
 
   #players
   post '/skills/mvc/teams/:team_id/player/new', to: "players#create"
-
 end
