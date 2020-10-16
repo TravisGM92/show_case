@@ -14,56 +14,54 @@
   </style>
 </head>
 
-<div class="box bg-img">
+<div class="box1 bg-img">
   <div class="edit-team">
-    <h2>Edit<span> <%= @team[:team_name] %></span></h2>
-
+    <h2 style="font-size:20px;">Edit Team</h2>
     <div class="forms">
-
       <div class="user-input" id="user-input">
-        <%= form_tag "/skills/mvc/teams/#{@team.id}/edit", method: :patch do %>
-        <%= text_field_tag :team_name, "#{@team[:team_name]}", :id => "team-name"%>
-      </div>
-      <br>
-      <div class="pass-input">
-        <%= text_field_tag :state, "#{@team[:state]}", :id => "team-state"%>
-        <br>
-        <br>
-        <%= number_field_tag :year_of_inception, "#{@team[:year_of_inception]}", :id => "year"%>
-      </div>
-      <br>
-    </div>
-
-    <%= submit_tag "Update team"%>
-    <%end %>
+        <%= form_tag "/skills/mvc/teams/#{@team.id}/edit", method: :patch  do %>
+          <p><%= label_tag :team_name %></p>
+          <%= text_field_tag :team_name, "#{@team.team_name}", :id => 'team-name'%>
+          <p><%= label_tag :state %></p>
+          <%= text_field_tag :state, "#{@team.state}", :id => 'team-state'%>
+          <p><%= label_tag :year_of_inception %></p>
+          <%= number_field_tag :year_of_inception, "#{@team.year_of_inception}", :id => 'year' %>
+          <%= submit_tag 'Update team' %>
+        <% end %>
     <br>
-
+      </div>
+    </div>
   </div>
 </div>
-<br>
-<br>
 
-<div class="player-add-form" style="float: left;margin-left:100px;">
-  <center>
-    <%= form_tag "/skills/mvc/teams", method: :post do %>
-    <%= label_tag :name %>
-    <%= text_field_tag :name%>
+
+<div class="box2 bg-img">
+  <div class="add-player">
+    <h2 style="font-size:20px;">Add a player</h2>
+    <div class="forms">
+      <div class="user-input" id="user-input">
+        <%= form_tag "/skills/mvc/teams/#{@team.id}/player/new", method: :post  do %>
+          <%= label_tag :name %>
+          <%= text_field_tag :name, "", :id => 'player-name'%>
+          <%= label_tag :height_in_inches %>
+          <%= number_field_tag :height, "", :id => 'height'%>
+          <%= label_tag :weight %>
+          <%= number_field_tag :weight, "", :id => 'weight' %>
+          <%= label_tag :college %>
+          <%= text_field_tag :college, "", :id => 'player-college'%>
+          <%= label_tag :home_state %>
+          <%= text_field_tag :home_state, "", :id => 'player-state'%>
+          <%= label_tag :position %>
+          <%= text_field_tag :position, "", :id => 'player-position'%>
+          <br>
+          <br>
+
+          <%= submit_tag 'Add player' %>
+        <% end %>
     <br>
-    <%= label_tag :height %>
-    <%= number_field_tag :height %>
-    <br>
-    <%= label_tag :weight %>
-    <%= number_field_tag :weight %>
-    <br>
-    <%= label_tag :college %>
-    <%= text_field_tag :college%>
-    <br>
-    <%= label_tag :home_state %>
-    <%= text_field_tag :home_state%>
-    <br>
-    <%= submit_tag 'Add Player' %>
-    <% end %>
-  </center>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
 <br>

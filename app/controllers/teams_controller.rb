@@ -10,14 +10,16 @@ class TeamsController < ApplicationController
   end
 
   def edit
-    @team = Team.find(params[:id])
+    @team = Team.find(params[:team_id])
   end
 
   def update
-    require "pry"; binding.pry
+    team = Team.find(params[:team_id])
+    team.update(team_params)
+    if team.save
+      redirect_to "/skills/mvc"
+    end
   end
-
-
 
   private
 
