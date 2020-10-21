@@ -13,7 +13,4 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
+//Define Links Button
