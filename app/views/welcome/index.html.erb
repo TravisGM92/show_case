@@ -1,107 +1,87 @@
 <!DOCTYPE html>
-
-<head>
-  <meta http-equiv = "Content-Language" content = "en-us" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <title>Home page</title>
-  <style>
-    body {
-      background-color: white;
-    }
-  </style>
-
-</head>
-
-      </ul>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="photo">
+    	<div class="photo-con">
+    		<div class="attn-photo">
+    			<div class="attn-info">
+    				<h3>Travis McKinstry</h3>
+    				<p style="font-weight:bold;">Software Developer | <a href="/about_me"><u>About Me</u></a></p>
+    			</div>
+    		</div>
+    	</div>
     </div>
-  </nav>
-  <br>
-  <div class="hero-marquee">
-    <div class="marquee">
-      <span class="clipped-text robotics">
-        <p>Welcome to Travis' Website!</p>
-      </span>
-    </div>
-  </div>
-  <div class="welcome-table2">
-    <table class="welcome-table2">
-      <tr>
-        <th><h3 style="text-align:left;">I am a software developer and... <span></span></h3></th>
-      </tr>
-    </table>
-  </div>
 
-  <div class="fixed-left">
-    <table class="education-table">
-      <th><h3 style="margin-left:10px;margin-top:10px;">Education</h3></th>
+    <table class="skills1">
       <tr>
         <th>
-          <div class="textbox">
-            <!-- <img id="mainBrain" src='./images/tools.jpg'/> -->
-            <!-- <figcaption>Picture by: Lachlan Donald from Unsplash</figcaption> -->
-            <br>
-            <ul>
-              <li> <%=link_to "Turing School of Software & Design", "https://turing.io/" %> </li>
-              <p style="font-size:12px;">Backend software developer <br>June 2020 to December 2020</p>
-              <li> <%=link_to "Front Range Community College", "https://www.frontrange.edu/" %> </li>
-              <p style="font-size:12px;">Associate's Degree in Communications. <br>August 2013 to May 2015</p>
-              <li> <%=link_to "University of Colorado, Denver", "https://www.ucdenver.edu/" %> </li>
-              <p style="font-size:12px;">Bachelor's of Science in Biology <br>August 2011 to May 2013, Did not graduate</p>
-            </ul>
-            <br>
-          </div>
+          <h3>Key Skillz</h3>
+          <h4>"Soft" Skills</h4>
+          <p>My last career was in communication, so of course I find soft skills highly valued. I say "soft" rather than soft because I don't consider communication skills to be less important than technical skills. They aren't 'soft', rather, immensely important in most jobs, esepcially programming.</p>
+          <h4>Technical Skills</h4>
+          <section>
+            <section id="skills" class="toad-fullscreen">
+    	        <article class="skills">
+    	            <div class="skills-list">
+    	                <p>CSS/HTML<span></span><span class="skills"></span></p>
+    	            </div>
+    	            <div class="skills-list">
+    	                <p>Ruby & Rails<span></span><span class="skills"></span></p>
+    	            </div>
+    	            <div class="skills-list">
+    	                <p>SQL<span></span><span class="skills"></span></p>
+    	            </div>
+    	            <div class="skills-list">
+    	                <p>MVC<span></span><span class="skills"></span></p>
+    	            </div>
+    	            <div class="skills-list">
+    	                <p>RSpec/Minitest<span></span><span class="skills"></span></p>
+    	            </div>
+
+    	            <div class="skills-list">
+    	                <p>Python<span></span><span class="skills"></span></p>
+    	            </div>
+    	            <div class="skills-list">
+    	                <p>Rest API (consuming & creating)<span></span><span class="skills"></span></p>
+    	            </div>
+
+    	            <div class="skills-list">
+    	                <p>Git & GitHub<span></span><span class="skills"></span></p>
+    	            </div>
+
+                  <div class="skills-list">
+                      <p>Capybara<span></span><span class="skills"></span></p>
+                  </div>
+    	        </article>
+    	    </section>
         </th>
       </tr>
     </table>
-  </div>
 
-
-      <div class="container">
-        <div class="row">
-          <a href="https://i.ibb.co/N3bKg80/Kiah-and-me.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-            <img src="https://i.ibb.co/N3bKg80/Kiah-and-me.png" alt="Kiah-and-me" class="img-fluid rounded" alt="travis headshot">
-          </a>
-          <a href="https://i.ibb.co/BVv4B1h/tucker-and-fam.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-            <img id="image" src="https://i.ibb.co/BVv4B1h/tucker-and-fam.png" style="height:137px;" alt="tucker and family" class="img-fluid rounded">
-          </a>
-          <a href="https://i.ibb.co/6rfp08X/Screen-Shot-2020-09-30-at-5-18-38-PM.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-            <img src="https://i.ibb.co/6rfp08X/Screen-Shot-2020-09-30-at-5-18-38-PM.png" style="height:137px; width:180px;" alt="denver skyline" class="img-fluid rounded">
-          </a>
-        </div>
-        <div class="row">
-          <a href="https://i.ibb.co/5K3fdg4/Screen-Shot-2020-09-30-at-5-23-14-PM.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-            <img src="https://i.ibb.co/5K3fdg4/Screen-Shot-2020-09-30-at-5-23-14-PM.png" alt="Travis as a kid" class="img-fluid rounded">
-          </a>
-          <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-            <img src="https://media.giphy.com/media/LTXmtE0Gg5YmOla7H7/giphy.gif" class="img-fluid rounded">
-          </a>
-          <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-            <img src="https://unsplash.it/600.jpg?image=256" alt="Colorado mountains" class="img-fluid rounded">
-          </a>
-        </div>
-      </div>
-
-
-  <div style = "clear:both;"></div>
-  <div class="fixed-left">
-    <table class="work-table">
-      <th><h3 style="margin-left:10px;margin-top:10px;">Work Experience</h3></th>
+    <table class="intro">
       <tr>
         <th>
-          <div class="textbox">
-            <br>
-            <ul>
-              <li>Sign Language Interpreter</li>
-              <p style="font-size:12px;">Worked as both a community sign language interpreter <br>and an interpreter in the K-12 setting.<br>Feburary 2015 to June 2020</p>
-            </ul>
-            <br>
-          </div>
+          <h2>Welcome!</h2>
+          <p><span style="margin-left:30px;">Thanks for visiting!</span> My name is Travis and I'm a <span style="color:rgb(93, 138, 255)">software developer</span>. I made this website as a kind-of virtual resume. Here you can find much more information than you would on my actual resume.</p>
+          <p>Of course I have my actual resume <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">here</a>.<br><br> You can read more about who I am <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">here</a>.<br><br> You can see the projects I'm working on currently <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">here.</a><br><br> I'm also putting together various ways of showing the types of things I've learned while at <a href="https://turing.io/">Turing School of Software & Design</a>Turing School of Software & Design. Those skills can be viewed <a href="https://turing.io/">here</a>.</p>
+
         </th>
       </tr>
     </table>
-  </div>
 
+    <table class="general">
+      <tr>
+        <th>
+          <h3>Career Goals</h3>
+          <p>As a bit of a perfectionist, I'd prefer to develop a really strong base in programming. Because I like keeping up on current events related to tech, I've grown a strong interest for <b>Python</b> and <b>Django</b>.</p><br>
+          <p>I'd also love to get into a bit of <b>UX/UI design</b>. As a software developer, it seems quite important to really understand what the client wants. If I don't know any UX/UI principles, how am I to truly understand what the client wants?</p><br>
+          <p>I believe a strength of mine is problem solving. I absolutely love all of the things that come with problem solving; <b>debugging</b>, <b>testing</b> (using RSpec, Minitest, Capybara, etc.), and scouring Stack Overflow. However, a weakness of mine is not knowing when to take a break (or "<a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">pom</a>" as we like to say in class). This is something I'd like to improve; the ability to know when I've hit the point of diminishing returns and need to step away.</p>
+
+        </th>
+      </tr>
+    </table>
+  </body>
 </html>

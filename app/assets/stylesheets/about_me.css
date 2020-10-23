@@ -1,0 +1,65 @@
+/* photos */
+.family-photo{
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.me-funny{
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+table.background{
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 45%;
+  float: left;
+  border-radius: 10px;
+}
+.background h3{
+  font-size: 25px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
+
+.background p{
+  font-size: 18px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
+
+table.background2{
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 45%;
+  float: right;
+  border-radius: 10px;
+}
+
+.background2 h3{
+  font-size: 25px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
+
+.background2 p{
+  font-size: 18px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
