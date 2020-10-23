@@ -1,69 +1,36 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <%= stylesheet_link_tag "/about_me.css" %>
+  </head>
+  <body>
 
-<head>
-  <meta http-equiv = "Content-Language" content = "en-us" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <title>Home page</title>
-  <style>
-    body {
-      background-color: white;
-    }
-  </style>
-
-</head>
-  <div class="hero-marquee">
-    <div class="marquee">
-      <span class="clipped-text robotics1">
-        <p>About Me</p>
-      </span>
-    </div>
-  </div>
-  <div class="about-container">
-    <div class="row">
-      <a href="https://i.ibb.co/N3bKg80/Kiah-and-me.png" data-toggle="lightbox" data-gallery="gallery" id="kiah_travis-about" title="My wife and I">
-        <img src="https://i.ibb.co/N3bKg80/Kiah-and-me.png" alt="Kiah-and-me" class="img-fluid rounded">
-      </a>
-      <a href="https://i.ibb.co/TYT8P8q/Screen-Shot-2020-10-01-at-4-57-56-PM.png"><img src="https://i.ibb.co/TYT8P8q/Screen-Shot-2020-10-01-at-4-57-56-PM.png" alt="group photo outdoors" id="group_photo" title="backpacking trip with the gang"></a>
-    </div>
-  </div>
-  <div class="about-container">
-  </div>
-
-  <div class="fixed-right">
-    <table class="about-table">
+    <table class="background">
       <tr>
         <th>
-          <br>
-          <p style="font-size:20px;margin-left:10px;margin-right:10px;">Having grown up with Deaf parents, American Sign Language was the first langauge I learned. After a few years, I learned English from my family and peers. After high school I decided to break the mold and go to Argentina for 6 months.<br><br>I eventually became a sign language interpreter and worked as my own boss for 5 years before deciding a career change was needed.</p>
-          <img src="https://media.giphy.com/media/3rgXBvUJXecb9SyQdq/source.gif" alt="funny sign language gif" id="funny_sign">
-          <br><p style="font-size:20px;margin-left:10px;margin-right:10px;"> I'm forunate to call myself a Colorado native. My family lived in Denver for most of my upbringing. As I hope is obvious, I don't take myself too serious. I'm a big believer in hard work, and I don't like to be rewarded until I've put in the right amount of work.</p>
-          <br>
+          <h3>Who is Travis?</h3>
+          <p>Well, first and foremost, I'm a Colorado native (#shoutout). I was born to 2 Deaf parents, and therefore learned American Sign Language as my first language.</p>
+          <img class="family-photo" src="https://i.ibb.co/BVv4B1h/tucker-and-fam.png" alt="Travis and parents with dog Tucker">
+          <img class="me-funny" src="https://media.giphy.com/media/LTXmtE0Gg5YmOla7H7/giphy.gif">
+          <div style="clear:both;">
+            <p>I was a sign language interpreter until I decided it was a bit too easy for me. Growing up with Deaf parents was kind of like cheating; I already had a mastery of the language. So I sought a challenge; how do I really challenge myself while incorporating things I'm more passionate about?</p>
+            <p>I have a passion for linguistics; the study languages. I also have a passion for logic. The obvious marriage between those two concepts is computer programming.</p>
+          </div>
         </th>
       </tr>
     </table>
-  </div>
 
-  <div class="fixed-right">
-    <table class="about-table">
-      <th><h2 style="margin-left:10px;margin-top:10px;font-weight:bold;margin-right:10px;">Educational Background</h2></th>
+    <table class="background2">
       <tr>
         <th>
-          <div class="textbox">
-            <br>
-            <p style="font-size:20px;margin-left:10px;margin-right:10px;">Like it's mentioned on the home page, I received an Associates degree in Communication from Front Range Community College. This degree allowed me to work as a sign language interpreter. Not long after I graduated I earned the coveted National Interpreters Certificate (NIC). Although I no longer work as a sign language interpreter, I still am very proud of the work I put in to earn that certificate.</p>
-            <br>
-            <a href="https://turing.io/" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-              <img src="https://i.ibb.co/wwjGk21/turing-logo.png" alt="turing-logo" id="turing-image"></a>
-              <p style="font-size:20px;margin-left:10px;margin-right:10px;"> I'm currently attending Turing School of Software & Design where we learn the basics of backend software development. The topics we have covered so far are; consuming API's, SQL, Ruby and Ruby-On-Rails, HTML/CSS, how to create a session/cookie, MVC principles, CRUD functionality and more.<br><br> Along with a fast pace, thoroughly in-depth software development cirriculum, we also engage in 'Gear Ups', where we're asked to challenge our assumptions and biases when it comes to building code, introspect on the accessibility of our code, among many other important topics.</p><br><br>
-              <p style="font-size:20px;margin-left:10px;">To see some of the sweet skillz I've learned so far, <%=link_to "click here!", "/skills" %>
-            </div>
-          </th>
-        </tr>
-      </table>
-    </div>
-
-
-      </html>
+          <p>I believe humor is one of the things the world needs more of, so I make it a point to not take myself too seriously. Of course I know when to put the humor aside and work, and I am sure to never cross any lines.</p>
+          <img class="family-photo" src="https://i.ibb.co/dBHk2g7/Kiah-and-me.png" alt="Kiah-and-me">
+          <img class="me-funny" src="https://i.ibb.co/5K3fdg4/Screen-Shot-2020-09-30-at-5-23-14-PM.png" alt="me as a young kid">
+          <div style="clear:both;"><br>
+          <img src="https://i.ibb.co/6rfp08X/Screen-Shot-2020-09-30-at-5-18-38-PM.png" alt="Denver skyline" style="height:300px;">
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>
