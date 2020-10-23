@@ -35,7 +35,6 @@
   }
 
   .container {
-    position: absolute;
     height: 110px;
     width: 97.5%;
     background: url('https://media.giphy.com/media/xT8qBfPfq52vkkdRte/source.gif') center/cover no-repeat;
@@ -64,8 +63,6 @@
     margin: 1rem;
     font-size: 2rem;
     padding: 0.5rem;
-    transform: translateX(100rem);
-    animation: showIn .5s forwards;
   }
 
   .container ul li:nth-child(1){
