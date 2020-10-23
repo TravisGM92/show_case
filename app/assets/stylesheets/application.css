@@ -119,15 +119,6 @@
       transform: scaleX(1);
   }
 
-  @keyframes showIn {
-      from{
-
-      }
-      to{
-          transform: translateX(0);
-      }
-  }
-
   .photo {
   	list-style: none;
   	width: 100%;
@@ -396,23 +387,6 @@
   .skills {
     animation: skills 1.25s cubic-bezier(0.17, 0.67, 0, 1);
   }
-  @keyframes skills {
-    0% {
-      left: -500px;
-      opacity: 0;
-    }
-    100% {
-      left: 0;
-      opacity: 1;
-    }
-  }
-  }
-
-  @include keyframes(fill) {
-    from {
-      right: 100%;
-    }
-  }
 
 
 
@@ -524,14 +498,6 @@
       transform: scaleX(1);
   }
 
-  @keyframes showIn {
-      from{
-
-      }
-      to{
-          transform: translateX(0);
-      }
-  }
 
   .photo {
     list-style: none;
@@ -800,20 +766,6 @@
   .skills {
     animation: skills 1.25s cubic-bezier(0.17, 0.67, 0, 1);
   }
-  @keyframes skills {
-    0% {
-      left: -500px;
-      opacity: 0;
-    }
-    100% {
-      left: 0;
-      opacity: 1;
-    }
-  }
   }
 
-  @include keyframes(fill) {
-    from {
-      right: 100%;
-    }
 }
