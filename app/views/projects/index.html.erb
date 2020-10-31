@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <%= stylesheet_link_tag "/projects.css" %>
+  </head>
+  <body>
+
+    <div class="buttons2">
+      <div class="button4">
+        <a href="/" class="button"><button class="pixel2" style="float:left;">Go back home!</button></a>
+      </div>
+      <div class="button5">
+        <a href="/about_me" class="button"><button class="pixel2" style="float:center;">Wait, who is Travis?</button></a>
+      </div>
+      <div class="button6">
+        <a href="/contact" class="button"><button class="pixel2">Contact Travis</button></a>
+      </div>
+    </div>
+
+    <table class="project2">
+      <tr>
+        <th>
+          <p><u>Project:</u> Viewing Party<br><br><u>Main purpose:</u> Demonstrate knowledge of how to consume an external API (The Movie DB) and process the information using industry standard organization (abstracting away the API call into service and facade folders, as well as using a PORO to create objects of each movie when the API call is processed).<br><br><u>Function of the app:</u> A user can register/login, and as long as there are other users, they can add users as friends (via email). After they have friends in their friends' list, they can browse movies (API consumption) and create a viewing party with whatever friends they choose.<br><br><u>Testing:</u> For nearly every project, we've been very adament on using TDD (test driven development). In this project we used RSpec to guide our development. This involved using the gem 'webmock' which acted as a fake API call so we wouldn't exceed our call rate limit, as well as using the gem 'faraday' to make the actual API calls. We also used the gem 'rubocop' to guide us in formatting everything  according to industry standards.</p>
+          <img class="viewing-party-gif" src="https://media.giphy.com/media/3LKT2cHV2H1mXtB3I6/source.gif" alt="Viewing party gif">
+          <div style="clear:both;">
+          <div class="github icon"><a href="https://github.com/TravisGM92/viewing_party" target="_blank"></a></div>
+          <div class="flickr icon"><a href="https://gentle-brook-14232.herokuapp.com/" target="_blank"></a></div>
+        </th>
+      </tr>
+    </table>
+
+    <table class="project3">
+      <tr>
+        <th>
+          <p><u>Project:</u> Rails Engine<br><br><u>Main purpose:</u> Demonstrate knowledge of how to build an API using pre-populated CSV files.<br><br><u>Function of the app:</u> This app is meant to be used by other developers. One can clone the repo into their computer and see how an API can be built, using CSV data. One of the first tasks we had was to process large CSV files into our seeds database so we could then use TDD to guide our development.<br><br><u>Testing:</u> I used RSpec in this project, as well as the gems 'webmock', 'faraday' and 'rubocop'. I also had a spec harness to test against, which was called 'Rails Driver'. The instructions on how to run both can be found on the repo's GitHub page.</p>
+          <img class="rails-engine-gif" src="https://media.giphy.com/media/STDbTlcu030emJTf2n/source.gif" alt="Viewing party gif">
+          <div style="clear:both;">
+          <div class="github icon"><a href="https://github.com/TravisGM92/the_engine" target="_blank"></a></div>
+          <div class="github icon"><a href="https://github.com/turingschool-examples/rails_driver" target="_blank"></a></div>
+        </th>
+      </tr>
+    </table>
+
+    <div style="clear:both;">
+      <br>
+
+    <div class="buttons3">
+      <div class="button8">
+        <a href="https://docs.google.com/document/d/1hU3B4tfy6PaG6IxiGcgMrSW3mZYf9OysBdU0KllS-X4/edit?usp=sharing" class="button"><button class="pixel2" style="float:center;">Check out my sweet resume</button></a>
+      </div>
+      <div class="button8">
+        <a href="https://github.com/TravisGM92" class="button"><button class="pixel2" style="float:center;">All the Repo's, ever</button></a>
+      </div>
+
+    </div>
+
+    <div class="space">
+
+    </div>
+  </body>
+</html>

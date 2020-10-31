@@ -1,0 +1,285 @@
+/* photos */
+.family-photo{
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.family-photo2{
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.viewing-party-gif{
+  width: 500px;
+  height: auto;
+  float: right;
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.rails-engine-gif{
+  width: 500px;
+  height: auto;
+  float: right;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.me-funny{
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+table.project1{
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: white;
+  width: 45%;
+  float: left;
+  border-radius: 10px;
+}
+.project1 h3{
+  font-size: 25px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
+
+.project1 p{
+  font-size: 18px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+  margin-bottom: 29px;
+}
+
+table.project2{
+  margin-top: 10px;
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+}
+
+table.project3{
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.project2 h3{
+  font-size: 25px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
+
+.project2 p{
+  width: 400px;
+  font-size: 18px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+  float: left;
+}
+
+.project3 h3{
+  font-size: 25px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+}
+
+.project3 p{
+  width: 400px;
+  font-size: 18px;
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-left: 10px;
+  float: left;
+}
+
+.space{
+  margin-bottom: 100px;
+}
+
+.space1{
+  margin-top: 20px;
+}
+
+.buttons2{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.button4{
+  margin-left:20px;
+  float: left;
+}
+.button5{
+  display: inline-block;
+  margin:0 auto;
+}
+.button6{
+  float: right;
+  margin-right:20px;
+}
+
+.buttons3{
+  margin-top:20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.button8{
+  display: inline-block;
+  margin:0 auto;
+}
+
+.pixel3{
+  margin-top:20px;
+  position: relative;
+  width: 300px;
+  height: 120px;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #06C1DE;
+  border: none;
+  border-radius: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  outline: none;
+}
+
+
+.pixel2 {
+    /* display: block; */
+    position: relative;
+    width: 300px;
+    height: 120px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: #06C1DE;
+    border: none;
+    border-radius: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    outline: none;
+}
+.pixel2::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    top: 12px;
+    left: 0;
+    project1-color: #047E91;
+    border-radius: 24px;
+    z-index: -1;
+}
+.pixel2:hover {
+    background-color: #06B6D1;
+}
+.pixel2:active {
+    top: 10px;
+}
+.pixel2:active::after {
+    top: 2px;
+}
+
+
+.icon{
+  margin-left: 90px;
+  background-color:#222;
+  background-repeat:no-repeat;
+  background-position:center center;
+  height: 5em;
+  width: 5em;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.goof{
+  -webkit-transition: all 0.4s cubic-bezier(0,2,0,2);
+  -moz-transition: all 0.4s cubic-bezier(0,2,0,2);
+  -ms-transition: all 0.4s cubic-bezier(0,2,0,2);
+  -o-transition: all 0.4s cubic-bezier(0,2,0,2);
+  transition: all 0.4s cubic-bezier(0,2,0,2);
+}
+
+.goof:hover{
+  background-size:35%;
+}
+
+.icon a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+.github{
+  float: left;
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAtMC40IDMyIDMzIj48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzIsMTZjMCw4LjgtNy4yLDE2LTE2LDE2QzcuMiwzMiwwLDI0LjgsMCwxNkMwLDcuMiw3LjIsMCwxNiwwQzI0LjgsMCwzMiw3LjIsMzIsMTYgTTIwLDI5YzUuNS0xLjgsOS41LTYuOSw5LjUtMTNjMC03LjUtNi0xMy41LTEzLjUtMTMuNUM4LjUsMi41LDIuNSw4LjUsMi41LDE2YzAsNi4xLDQsMTEuMiw5LjUsMTN2LTIuNWMtMy45LDAuOS00LjgtMS44LTQuOC0xLjhjLTAuNi0xLjYtMS41LTItMS41LTJjLTEuMy0wLjksMC4xLTAuOCwwLjEtMC44YzEuNCwwLjEsMi4xLDEuNCwyLjEsMS40YzEuMywyLjMsMy41LDEuNCw0LjIsMS4xYzAuMi0xLDEtMS4yLDEuMi0xLjNDOS44LDIyLjYsNiwyMS4zLDYsMTUuMmMwLTEuNywwLjYtMy4xLDEuNi00LjJjLTAuMi0wLjQtMC43LTIsMC4yLTQuMmMwLDAsMS4zLTAuNCw0LjMsMS42YzEuMy0wLjMsMi42LTAuNSwzLjktMC41YzEuMywwLDIuNywwLjIsMy45LDAuNWMzLTIsNC4zLTEuNiw0LjMtMS42YzAuOSwyLjIsMC4zLDMuOCwwLjIsNC4yYzEsMS4xLDEuNiwyLjUsMS42LDQuMmMwLDYuMS0zLjgsNy40LTcuMyw3LjhjMC42LDAuNCwxLjMsMS4zLDEuMywyLjhWMjl6Ii8+PC9zdmc+);
+  background-size:60%;
+}
+
+.github:hover{
+  background-color:#6CC644;
+}
+
+.flickr{
+  margin-bottom: 15px;
+  float:right;
+  margin-right: 690px;
+  background-image:url("https://i.ibb.co/g731dW2/heroku-icon.png");
+  background-size:65%;
+}
+
+.flickr:hover{
+  background-color:#FF0084;
+}
+
+.linkedin{
+  margin-top: 10px;
+  margin-right:10px;
+  float: right;
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAtMC4zIDEwNSAxMDUiPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjcsMzQuNmgyMS43djY5LjdIMS43VjM0LjZ6IE0xMi42LDBjNi45LDAsMTIuNiw1LjYsMTIuNiwxMi42YzAsNi45LTUuNiwxMi42LTEyLjYsMTIuNkM1LjYsMjUuMSwwLDE5LjUsMCwxMi42QzAsNS42LDUuNiwwLDEyLjYsMCIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zNywzNC42aDIwLjh2OS41aDAuM2MyLjktNS41LDEwLTExLjMsMjAuNS0xMS4zYzIxLjksMCwyNiwxNC40LDI2LDMzLjJ2MzguMkg4Mi45VjcwLjRjMC04LjEtMC4yLTE4LjUtMTEuMy0xOC41Yy0xMS4zLDAtMTMsOC44LTEzLDE3Ljl2MzQuNUgzN1YzNC42eiIvPjwvc3ZnPg==);
+  background-size:50%;
+}
+
+.linkedin:hover{
+  background-color:#007BB6;
+}
