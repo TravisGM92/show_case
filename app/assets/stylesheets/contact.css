@@ -1,76 +1,36 @@
-.flipCard {
-  -webkit-perspective: 800;
-  -ms-perspective: 800;
-  -moz-perspective: 800;
-  -o-perspective: 800;
-   width: 400px;
-   height: 200px;
-   position: relative;
-   margin: 50px auto;
-}
-.flipCard .card.flipped {
-  transform:rotatey(-180deg);
-  -ms-transform:rotatey(-180deg); /* IE 9 */
-  -moz-transform:rotatey(-180deg); /* Firefox */
-  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
-  -o-transform:rotatey(-180deg); /* Opera */
-}
-.flipCard .card {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.5s;
-  -moz-transform-style: preserve-3d;
-  -moz-transition: 0.5s;
-  -ms-transform-style: preserve-3d;
-  -ms-transition: 0.5s;
-  -o-transform-style: preserve-3d;
-  -o-transition: 0.5s;
-  transform-style: preserve-3d;
-  transition: 0.5s;
-}
-.flipCard .card .side {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  cursor: pointer;
-  position: absolute;
-  box-sizing: border-box;
-  z-index: 2;
-  backface-visibility: hidden;  /* W3C */
-  -webkit-backface-visibility: hidden; /* Safari & Chrome */
-  -moz-backface-visibility: hidden; /* Firefox */
-  -ms-backface-visibility: hidden; /* Internet Explorer */
-  -o-backface-visibility: hidden; /* Opera */
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
-  overflow: auto;
-}
-.flipCard .card .back {
-  background: white;
-  color: black;
-  transform:rotatey(-180deg);
-  -ms-transform:rotatey(-180deg); /* IE 9 */
-  -moz-transform:rotatey(-180deg); /* Firefox */
-  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
-  -o-transform:rotatey(-180deg); /* Opera */
+table.contact{
+  margin-top: 10px;
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  text-align: right;
 }
 
-.flipCard .card .front {
-  font-family: Georgia;
-  font-size: 3em;
-  text-align: center;
-  line-height: 160px;
-  background-color: #7030a0;
-  border: 3px solid white;
-  color: white;
-
+.contact p {
+  font-size: 20px;
+  margin-right: 10px;
 }
-.flipCard .card .back {
-  background-color: #dbb2f9;
-  border: 3px solid white;
-  text-align: center;
-  color: black;
-  padding-top: 50px;
-  font-family: Georgia;
-  font-size: 2em;
+
+.github2{
+  float: right;
+  margin-top:10px;
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAtMC40IDMyIDMzIj48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzIsMTZjMCw4LjgtNy4yLDE2LTE2LDE2QzcuMiwzMiwwLDI0LjgsMCwxNkMwLDcuMiw3LjIsMCwxNiwwQzI0LjgsMCwzMiw3LjIsMzIsMTYgTTIwLDI5YzUuNS0xLjgsOS41LTYuOSw5LjUtMTNjMC03LjUtNi0xMy41LTEzLjUtMTMuNUM4LjUsMi41LDIuNSw4LjUsMi41LDE2YzAsNi4xLDQsMTEuMiw5LjUsMTN2LTIuNWMtMy45LDAuOS00LjgtMS44LTQuOC0xLjhjLTAuNi0xLjYtMS41LTItMS41LTJjLTEuMy0wLjksMC4xLTAuOCwwLjEtMC44YzEuNCwwLjEsMi4xLDEuNCwyLjEsMS40YzEuMywyLjMsMy41LDEuNCw0LjIsMS4xYzAuMi0xLDEtMS4yLDEuMi0xLjNDOS44LDIyLjYsNiwyMS4zLDYsMTUuMmMwLTEuNywwLjYtMy4xLDEuNi00LjJjLTAuMi0wLjQtMC43LTIsMC4yLTQuMmMwLDAsMS4zLTAuNCw0LjMsMS42YzEuMy0wLjMsMi42LTAuNSwzLjktMC41YzEuMywwLDIuNywwLjIsMy45LDAuNWMzLTIsNC4zLTEuNiw0LjMtMS42YzAuOSwyLjIsMC4zLDMuOCwwLjIsNC4yYzEsMS4xLDEuNiwyLjUsMS42LDQuMmMwLDYuMS0zLjgsNy40LTcuMyw3LjhjMC42LDAuNCwxLjMsMS4zLDEuMywyLjhWMjl6Ii8+PC9zdmc+);
+  background-size:60%;
+}
+
+.github2:hover{
+  background-color:#6CC644;
+}
+
+
+.travis-headshot{
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-top:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
