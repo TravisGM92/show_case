@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,27 +12,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_225612) do
-
+ActiveRecord::Schema.define(version: 20_201_015_225_612) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "players", force: :cascade do |t|
-    t.string "name"
-    t.integer "height"
-    t.integer "weight"
-    t.string "college"
-    t.string "home_state"
-    t.bigint "team_id"
-    t.string "position"
-    t.index ["team_id"], name: "index_players_on_team_id"
+  create_table 'players', force: :cascade do |t|
+    t.string 'name'
+    t.integer 'height'
+    t.integer 'weight'
+    t.string 'college'
+    t.string 'home_state'
+    t.bigint 'team_id'
+    t.string 'position'
+    t.index ['team_id'], name: 'index_players_on_team_id'
   end
 
-  create_table "teams", force: :cascade do |t|
-    t.string "team_name"
-    t.string "state"
-    t.integer "year_of_inception"
+  create_table 'teams', force: :cascade do |t|
+    t.string 'team_name'
+    t.string 'state'
+    t.integer 'year_of_inception'
   end
 
-  add_foreign_key "players", "teams"
+  add_foreign_key 'players', 'teams'
 end
