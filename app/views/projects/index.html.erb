@@ -43,8 +43,38 @@
     </table>
 
     <div style="clear:both;">
-      <br>
+      <br><br>
+      <h3 class="project-title">All of my projects</h3>
+    <div class=projects-tables">
+      <div class="projects-table-1">
+<%x=1 %>
+        <%@projects[0..((@projects.length/2).floor)].each do |project| %>
+          <div class="project-<%=x%>" id="project">
+            <p style="font-weight:bold;"><%= project.name %></p>
+            <p><%=project.description%></p>
+            <a href="<%=project.url%>">Check out the GitHub here</a>
+              <%x+=1 %>
+              <hr>
+          </div>
+        <%end %>
 
+      </div>
+      <%y=x %>
+      <div class="projects-table-2">
+        <%@projects[((@projects.length/2).floor+1)..-1].each do |project| %>
+        <div class="project-<%=y%>" id="project">
+          <p style="font-weight:bold;"><%= project.name %></p>
+          <p><%=project.description%></p>
+          <a href="<%=project.url%>">Check out the GitHub here</a>
+          <%y+=1 %>
+          <hr>
+        </div>
+        <%end %>
+      </div>
+    </div>
+
+      <div style="clear:both;">
+        <br>
     <div class="buttons3">
       <div class="button8">
         <a href="https://docs.google.com/document/d/1hU3B4tfy6PaG6IxiGcgMrSW3mZYf9OysBdU0KllS-X4/edit?usp=sharing" class="button"><button class="pixel2" style="float:center;">Check out my sweet resume</button></a>
@@ -52,11 +82,7 @@
       <div class="button8">
         <a href="/learning" class="button" id="repos"><button class="pixel2" style="float:center;">See what I'm learning</button></a>
       </div>
-
     </div>
 
-    <div class="space">
-
-    </div>
   </body>
 </html>

@@ -121,14 +121,6 @@ table.project3{
   float: left;
 }
 
-.space{
-  margin-bottom: 100px;
-}
-
-.space1{
-  margin-top: 20px;
-}
-
 .buttons2{
   margin-top: 50px;
   display: flex;
@@ -282,4 +274,49 @@ table.project3{
 
 .linkedin:hover{
   background-color:#007BB6;
+}
+
+.projects-tables {
+  width: 100%;
+}
+
+.projects-table-1 {
+  float: left;
+  width: 43%;
+  margin-left: 80px;
+  margin-top: -50px;
+}
+
+.projects-table-2 {
+  float: right;
+  width: 43%;
+  margin-left:5px;
+  margin-right: 80px;
+  margin-top: -50px;
+}
+
+.projects-table-2:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.projects-table-1:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.project-title {
+  width: 800px;
+  height: 120px;
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+  margin-left: 25%;
+}
+
+#project p {
+  font-size: 20px;
+}
+
+#project a {
+  font-size: 17px;
 }
