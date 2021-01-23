@@ -8,4 +8,4 @@ There is a testing suite present. In order to clone this project down, one shoul
 
 In order for you're app to work correctly, you'll need to create a database. So, in the terminal, type the following command; 'rails db:create'.
 
-One of the first things you'll notice is that this website was built on the strict principle of TDD..
+One of the first things you'll notice is that this website was built on the strict principle of TDD.
