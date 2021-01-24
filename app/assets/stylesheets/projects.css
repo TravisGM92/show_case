@@ -50,29 +50,6 @@
   border-radius: 5px;
 }
 
-table.project1{
-  margin-top: 10px;
-  margin-left: 20px;
-  background-color: white;
-  width: 45%;
-  float: left;
-  border-radius: 10px;
-}
-.project1 h3{
-  font-size: 25px;
-  text-align: left;
-  color: rgb(62, 62, 62);
-  margin-left: 10px;
-}
-
-.project1 p{
-  font-size: 18px;
-  text-align: left;
-  color: rgb(62, 62, 62);
-  margin-left: 10px;
-  margin-bottom: 29px;
-}
-
 table.project2{
   margin-top: 10px;
   margin: auto;
@@ -97,8 +74,8 @@ table.project3{
 }
 
 .project2 p{
-  width: 400px;
-  font-size: 18px;
+  width: 50%;
+  font-size: 20px;
   text-align: left;
   color: rgb(62, 62, 62);
   margin-left: 10px;
@@ -113,8 +90,8 @@ table.project3{
 }
 
 .project3 p{
-  width: 400px;
-  font-size: 18px;
+  width: 50%;
+  font-size: 20px;
   text-align: left;
   color: rgb(62, 62, 62);
   margin-left: 10px;
@@ -223,6 +200,20 @@ table.project3{
   transition: background-color 0.4s ease;
 }
 
+.icon2{
+  margin-left: 340px;
+  background-color:#222;
+  background-repeat:no-repeat;
+  background-position:center center;
+  height: 5em;
+  width: 5em;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
 .goof{
   -webkit-transition: all 0.4s cubic-bezier(0,2,0,2);
   -moz-transition: all 0.4s cubic-bezier(0,2,0,2);
@@ -296,11 +287,11 @@ table.project3{
 }
 
 .projects-table-2:hover {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(203, 203, 203);
 }
 
 .projects-table-1:hover {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(203, 203, 203);
 }
 
 .project-title {
@@ -319,4 +310,15 @@ table.project3{
 
 #project a {
   font-size: 17px;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8,
+.project-9, .project-10, .project-11, .project-12, .project-13, .project-14, .project-15, .project-16,
+.project-17, .project-18, .project-19, .project-20, .project-21, .project-22, .project-23, .project-24,
+ .project-25, .project-26, .project-27, .project-28, .project-29, .project-30, .project-31, .project-32,
+  .project-33, .project-34, .project-35, .project-36, .project-37, .project-38, .project-39, .project-40,
+   .project-41, .project-42, .project-43, .project-44, .project-45{
+  background-color: rgb(231, 231, 231);
+  border-radius: 2px;
+  margin-right: 2px;
 }

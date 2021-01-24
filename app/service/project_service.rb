@@ -5,7 +5,7 @@ class ProjectService
   end
 
   def self.get_projects
-    if Project.all == [] || Date.today > Project.first.created_at
+    if Project.all.empty? || Date.today > Project.first.created_at.to_date
       github_projects_api_call
     else
       Project.all
