@@ -37,7 +37,7 @@
           <img class="rails-engine-gif" src="https://media.giphy.com/media/STDbTlcu030emJTf2n/source.gif" alt="Viewing party gif">
           <div style="clear:both;">
           <div class="github icon"><a href="https://github.com/TravisGM92/the_engine" target="_blank"></a></div>
-          <div class="github icon"><a href="https://github.com/turingschool-examples/rails_driver" target="_blank"></a></div>
+          <div class="github icon2"><a href="https://github.com/turingschool-examples/rails_driver" target="_blank"></a></div>
         </th>
       </tr>
     </table>
@@ -51,11 +51,10 @@
 
         <%@projects[0..((@projects.length/2).floor)].each do |project| %>
           <div class="project-<%=x%>" id="project">
-            <p style="font-weight:bold;"><%= project.name %></p>
-            <p><%=project.description%></p>
-            <a href="<%=project.url%>">Check out the GitHub here</a>
+            <p style="font-weight:bold;margin-left:5px;"><%= project.name %></p>
+            <p style="margin-left:5px;margin-right:5px;"><%=project.description%></p>
+            <a href="<%=project.url%>" style="margin-left:5px;">Check out the GitHub here</a>
               <%x+=1 %>
-              <hr>
           </div>
         <%end %>
 
@@ -64,11 +63,10 @@
       <div class="projects-table-2">
         <%@projects[((@projects.length/2).floor)..-1].each do |project| %>
         <div class="project-<%=y%>" id="project">
-          <p style="font-weight:bold;"><%= project.name %></p>
-          <p><%=project.description%></p>
-          <a href="<%=project.url%>">Check out the GitHub here</a>
+          <p style="font-weight:bold;margin-left:5px;"><%= project.name %></p>
+          <p style="margin-left:5px;margin-right:5px;"><%=project.description%></p>
+          <a href="<%=project.url%>" style="margin-left:5px;">Check out the GitHub here</a>
           <%y+=1 %>
-          <hr>
         </div>
         <%end %>
       </div>
