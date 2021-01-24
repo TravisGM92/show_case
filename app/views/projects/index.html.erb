@@ -48,6 +48,7 @@
     <div class=projects-tables">
       <div class="projects-table-1">
 <%x=1 %>
+
         <%@projects[0..((@projects.length/2).floor)].each do |project| %>
           <div class="project-<%=x%>" id="project">
             <p style="font-weight:bold;"><%= project.name %></p>
@@ -61,7 +62,7 @@
       </div>
       <%y=x %>
       <div class="projects-table-2">
-        <%@projects[((@projects.length/2).floor+1)..-1].each do |project| %>
+        <%@projects[((@projects.length/2).floor)..-1].each do |project| %>
         <div class="project-<%=y%>" id="project">
           <p style="font-weight:bold;"><%= project.name %></p>
           <p><%=project.description%></p>
