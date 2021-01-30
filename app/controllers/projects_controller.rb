@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class ProjectsController < ApplicationController
   def index
-    @projects = ProjectService.get_projects
+    @projects = ProjectService.github_projects
   end
 end

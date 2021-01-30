@@ -11,7 +11,7 @@ describe Project, type: :model do
   describe 'API call' do
     it 'only makes one API call a day' do
       expect(Project.all).to eq([])
-      ProjectService.get_projects
+      ProjectService.github_projects
       expect(Project.all).to_not be_empty
     end
   end
