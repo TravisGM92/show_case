@@ -276,6 +276,8 @@ table.project3{
   width: 43%;
   margin-left: 80px;
   margin-top: -50px;
+  overflow: scroll;
+  height: 600px;
 }
 
 .projects-table-2 {
@@ -284,6 +286,8 @@ table.project3{
   margin-left:5px;
   margin-right: 80px;
   margin-top: -50px;
+  overflow: scroll;
+  height: 600px;
 }
 
 .projects-table-2:hover {
