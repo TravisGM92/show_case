@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get '/contact', to: 'welcome#contact'
   get '/projects', to: 'projects#index'
   get '/learning', to: 'learning#index'
+  get '/surprise', to: 'learning#show'
 end

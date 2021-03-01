@@ -14,6 +14,12 @@
  *= require_self
  */
 /* tables */
-@media (min-width : 505px){
 
+.main-div-index {
+  width: 100%;
+}
+
+.surprise-gif {
+  margin-top: 200px;
+  margin-left: 30%;
 }
